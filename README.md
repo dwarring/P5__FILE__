@@ -18,7 +18,7 @@ This module tries to mimic the behaviour of `__FILE__`, `__LINE__`, `__PACKAGE__
 TERMS
 =====
 
-__PACKAGE__
+\_\_PACKAGE\_\_
 -----------
 
 A special token that returns the name of the package in which it occurs.
@@ -29,7 +29,7 @@ A special token that returns the name of the package in which it occurs.
 
 Because `$?PACKAGE` gives you the actual `Package` object (which can be used for introspection), you need to call the `.^name` method to get a string with the name of the package.
 
-__FILE__
+\_\_FILE\_\_
 --------
 
 A special token that returns the name of the file in which it occurs.
@@ -38,7 +38,7 @@ A special token that returns the name of the file in which it occurs.
 
     $?FILE
 
-__LINE__
+\_\_LINE\_\_
 --------
 
 A special token that compiles to the current line number.
@@ -47,7 +47,7 @@ A special token that compiles to the current line number.
 
     $?LINE
 
-__SUB__
+\_\_SUB\_\_
 -------
 
 A special token that returns a reference to the current subroutine, or "undef" outside of a subroutine.
